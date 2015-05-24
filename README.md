@@ -1,4 +1,4 @@
-# ConsoleKit
+# Lib-Console
 Simple PHP Console-Command Framework
 
 # Setup Default Command file path
