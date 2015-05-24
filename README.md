@@ -1,5 +1,5 @@
 # Lib-Console
-Simple PHP Console-Command Framework
+Simple PHP CLI Framework
 
 # Setup Default Command file path
 ```json
