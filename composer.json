@@ -1,5 +1,5 @@
 {
-        "name": "kasundon/consolekit",
+        "name": "kasundon/lib-console",
         "version": "0.0.1",
         "autoload": {
             "classmap": ["."],
