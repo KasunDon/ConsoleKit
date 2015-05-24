@@ -46,7 +46,7 @@ class Commands_Test implements Command {
 }
 ```
 
-save your file in pre-configured file path  as `Test.php`. Not `Commands_Test.php`.
+save your file in pre-configured file path  as `Test.php`.
 
 #Run Commands
 Execute `run.php` file with first argument as your custom command name. when pass in arguments use following format `--abc 1`
