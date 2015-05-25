@@ -15,9 +15,15 @@ class Config {
      * 
      * @param string $file
      */
-    public function __construct($file = "config.json") 
+    public function __construct($file = "console.json") 
     {
-        $this->config = json_decode(file_get_contents($file));
+        $file = getcwd() . "/" . $file;
+        
+        if (! file_exists($file)) {
+            throw new Exception("Config file not found. Please specify console.json.");
+        }
+        
+        $this->config = json_decode(@file_get_contents($file));
     }
     
     /**

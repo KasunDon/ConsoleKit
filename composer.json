@@ -1,10 +1,10 @@
 {
         "name": "kasundon/lib-console",
-        "version": "0.0.1",
+        "version": "0.0.5",
         "autoload": {
             "classmap": ["."],
             "psr-4": {
-                "ConsoleKit\\": ""
+                "LibConsole\\": ""
             }
         }
 }
