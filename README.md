@@ -46,13 +46,11 @@ class Commands_Test implements Command {
 }
 ```
 
-save your file in pre-configured file path  as `Test.php`.
-
 #Run Commands
-Execute `run.php` file with first argument as your custom command name. when pass in arguments use following format `--abc 1`
+Place `app.php` into current working directory and execute  on following format. first argument is your custom command name. when pass in arguments use following format `--abc 1`
 
 ```shell
-php run.php Test --abc 1
+php app.php Test --abc 1
 ```
 
 #Using cli arguments in command
