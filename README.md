@@ -5,8 +5,16 @@ Simple PHP CLI Framework
 There are two ways to use lib-console.
 
 ####1. Using Composer
+composer.json file
+```json
+{
+    "require": {
+        "kasundon/lib-console": "~0.0.6"
+    }
+}
+```
+
 ```shell
-php composer.phar require "kasundon/lib-console": "~0.0.5"
 php composer.phar install
 ```
 
