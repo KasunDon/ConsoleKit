@@ -11,7 +11,12 @@ class FileTokenizer {
      * @param string $file
      * @return boolean
      */
-    public function parse($file) {
+    public function parse($file) 
+    {
+        if(!is_readable($file)) {
+            return false;
+        }
+        
         $className = $this->getClassName($file);
         
         if(empty($className)) {
@@ -33,7 +38,7 @@ class FileTokenizer {
      */
     private function getClassName($file) {
         $fp = @fopen($file, 'r');
-        
+
         $class = $buffer = null;
         
         $i = 0;

@@ -60,7 +60,7 @@ class CommandHandler {
     {
         $filePath = $this->config->file_path;
         
-        $filePath = $this->config->file_path = empty($filePath)? getcwd(): $filePath;
+        $filePath = $this->config->file_path = (empty($filePath)? getcwd(): $filePath) . "/";
         
         $rawFiles = scandir($this->config->file_path);
 
